@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  border-bottom: 1px dotted black;
+  padding: 10px;
+}
+/* chỉnh grid */
+#container {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: repeat(2, auto);
+  border: 15px solid rgb(6, 6, 225);
+}
+
+#container > section {
+  border-left: 10px solid rgb(6, 6, 225);
+  border-bottom: 10px solid rgb(6, 6, 225);
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+#timeline {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+/* phần goals */
+.fas {
+  height: 10px;
+  width: 20px;
+  float: left;
+  display: block;
+  margin: 25px;
+  font-size: 20px;
+  top: 0;
+  margin-top: 10px;
+}
+.goal-des {
+  border-bottom: 1px dotted black;
+}
+.header {
+  margin-bottom: 20px;
+}
+.info,
+.goal-des {
+  padding-bottom: 25px;
+}
+#goals h4 {
+  margin-bottom: 5px;
+}
+
+/* phần scopes */
+#scopes .information {
+  display: flex;
+  flex-direction: row;
+}
+.in {
+  margin-right: 7px;
+}
+/* phần team */
+.member {
+  height: 30px;
+  stroke: black;
+  color: black;
+}
+
+/* phần timeline */
+.icon {
+  background-color: rgb(158, 122, 191);
+  border: 1px solid rgb(31, 29, 29);
+  border-radius: 100%;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+.pro-name {
+  margin-bottom: 20px;
+  border-bottom: 1px dotted rgb(46, 46, 228);
+  border-collapse: collapse;
+  text-align: start;
+  margin-top: 0;
+  padding: 0;
+}
+.project {
+  display: flex;
+  flex-direction: row;
+}
+/* phan primary */
+.information {
+  margin-bottom: 10px;
+}
+.information .fas {
+  margin: 20px;
+  height: 20px;
+}
+
+/* mobile */
+@media screen and (max-width: 570px) {
+  #container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    height: 100%;
+    width: 100vw;
+    border: 20px solid rgb(6, 6, 225);
+  }
+  #primary {
+    grid-row: 4/5;
+  }
+  #team {
+    grid-row: 3/4;
+  }
+  #scopes {
+    grid-row: 2/3;
+  }
+  #timeline {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  #container > section {
+    border-bottom: 10px solid rgb(6, 6, 225);
+    border-left: none;
+    border-collapse: collapse;
+    display: block;
+    /* padding: 20px; */
+  }
+  .fas {
+    height: 15px;
+    width: 10px;
+    display: block;
+    float: none;
+    font-size: 20px;
+
+    margin-left: 50%;
+  }
+  .info {
+    display: block;
+  }
+  /* phần scopes */
+  #scopes .information {
+    flex-direction: column;
+  }
+  .in {
+    margin-bottom: 15px;
+  }
+
+  /* phần timeline */
+  .icon {
+    background-color: rgb(158, 122, 191);
+    border: 1px solid rgb(62, 62, 212);
+    border-radius: 100%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: aliceblue;
+  }
+  .pro-name {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted rgb(46, 46, 228);
+    border-collapse: collapse;
+    text-align: start;
+    margin-top: 0;
+    padding: 0;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  h3,
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+/* tablet */
+@media screen and (max-width: 895px) and (min-width: 570px) {
+  #container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    height: 100%;
+    width: 100vw;
+    border: 20px solid rgb(6, 6, 225);
+  }
+  #primary {
+    grid-row: 4/5;
+  }
+  #team {
+    grid-row: 3/4;
+  }
+  #scopes {
+    grid-row: 2/3;
+  }
+  #timeline {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  #container > section {
+    border-bottom: 10px solid rgb(6, 6, 225);
+    border-left: none;
+    border-collapse: collapse;
+    display: block;
+    /* padding: 20px; */
+  }
+  .fas {
+    height: 15px;
+    width: 10px;
+    display: block;
+    float: none;
+    font-size: 20px;
+
+    margin-left: 50%;
+  }
+  .info {
+    display: block;
+  }
+  /* phần scopes */
+  #scopes .information {
+    flex-direction: column;
+  }
+  .in {
+    margin-bottom: 15px;
+  }
+
+  /* phần timeline */
+  .icon {
+    background-color: rgb(158, 122, 191);
+    border: 1px solid rgb(62, 62, 212);
+    border-radius: 100%;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: aliceblue;
+  }
+  .pro-name {
+    margin-bottom: 20px;
+    border-bottom: 1px dotted rgb(46, 46, 228);
+    border-collapse: collapse;
+    text-align: start;
+    margin-top: 0;
+    padding: 0;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  h3,
+  h4 {
+    margin-bottom: 20px;
+  }
+}
