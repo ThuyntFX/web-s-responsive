@@ -1,2 +1,2 @@
 # web-s-responsive
-https://github.com/ThuyntFX/web-s-responsive.git
+- pages: https://thuyntfx.github.io/web-s-responsive/
